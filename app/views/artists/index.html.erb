@@ -1,0 +1,8 @@
+<h1>Hola</h1>
+
+<% @artists.each do |artist| %>
+    <div>
+        <div> <%= artist.name %> </div>
+        <img src = <%= artist.image_url %>> 
+    </div>
+<% end %>
