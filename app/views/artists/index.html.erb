@@ -6,7 +6,7 @@
                 <img src = <%= artist.image_url %>>
                 <div class="card-body">
                     <h5 class="card-title"><%= artist.name %></h5>
-                    <a href="#" class="btn btn-primary">Ver más</a>
+                    <%= link_to "Ver más", artist, class: "btn btn-primary" %>
                 </div>
             </div>
         </div>
