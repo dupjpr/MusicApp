@@ -1,8 +1,28 @@
-<h1>Hola</h1>
+<div class="container">
+    <div class="row">
+        <% @artists.each do |artist| %>
+        <div class="col-sm-3">
+            <div class="card">
+                <img src = <%= artist.image_url %>>
+                <div class="card-body">
+                    <h5 class="card-title"><%= artist.name %></h5>
+                    <a href="#" class="btn btn-primary">Ver más</a>
+                </div>
+            </div>
+        </div>
 
-<% @artists.each do |artist| %>
-    <div>
-        <div> <%= artist.name %> </div>
-        <img src = <%= artist.image_url %>> 
+    <% end %>
+    
+
     </div>
-<% end %>
+
+
+</div>
+
+
+
+
+
+
+
+
